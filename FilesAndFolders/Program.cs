@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 
 namespace FilesAndFolders
@@ -24,31 +25,45 @@ namespace FilesAndFolders
 
             result.AppendLine(string.Format("{0}{1} size: {2}", indent, folder.Name, folder.GetSize()));
 
-            foreach (var file in folder.Files)
+            folder.Files.ForEach(file =>  result.AppendLine(string.Format(".{0}-{1} size: {2}", indent, file.Name, file.Size)));
+            
+            /*foreach (var file in folder.Files)
             {
                 result.AppendLine(string.Format(".{0}-{1} size: {2}", indent, file.Name, file.Size));
-            }
+            }*/
 
-            foreach (var subFolder in folder.Folders)
+            /*foreach (var subFolder in folder.Folders)
             {
                 GetFileSystemString(subFolder, result, depth + 1);
-            }
+            }*/
+
+            folder.Folders.ForEach(subFolder => GetFileSystemString(subFolder, result, depth + 1));
         }
         private static void GetSubFolders(Folder folder)
         {
-            foreach (var file in folder.Directory.GetFiles())
+            folder.Directory.GetFiles().ToList().ForEach(file => folder.Files.Add(new File(file.Name, file.Length)));
+
+            /*foreach (var file in folder.Directory.GetFiles())
             {
                 folder.Files.Add(new File(file.Name, file.Length));
-            }
+            }*/
 
-            foreach (var subDir in folder.Directory.GetDirectories())
+            folder.Directory.GetDirectories().ToList().ForEach(subDir => {
+                var subFolder = new Folder(subDir.Name, subDir.FullName);
+            
+                folder.Folders.Add(subFolder);
+            
+                GetSubFolders(subFolder);
+            });
+
+            /*foreach (var subDir in folder.Directory.GetDirectories())
             {
                 var subFolder = new Folder(subDir.Name, subDir.FullName);
             
                 folder.Folders.Add(subFolder);
             
                 GetSubFolders(subFolder);
-            }
+            }*/
         }
     }
 }

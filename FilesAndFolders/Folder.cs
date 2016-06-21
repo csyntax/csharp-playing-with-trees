@@ -6,6 +6,8 @@ namespace FilesAndFolders
 {
     public class Folder
     {
+        private string name;
+        private string fullPath;
         public Folder(string name, string fullPath)
         {
             this.Name = name;
