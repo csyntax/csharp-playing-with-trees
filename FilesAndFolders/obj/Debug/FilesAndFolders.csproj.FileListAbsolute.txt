@@ -1,0 +1,12 @@
+C:\Users\csyntax\Desktop\FilesAndFolders\FilesAndFolders\bin\Debug\FilesAndFolders.exe.config
+C:\Users\csyntax\Desktop\FilesAndFolders\FilesAndFolders\bin\Debug\FilesAndFolders.exe
+C:\Users\csyntax\Desktop\FilesAndFolders\FilesAndFolders\bin\Debug\FilesAndFolders.pdb
+C:\Users\csyntax\Desktop\FilesAndFolders\FilesAndFolders\obj\Debug\FilesAndFolders.csprojResolveAssemblyReference.cache
+C:\Users\csyntax\Desktop\FilesAndFolders\FilesAndFolders\obj\Debug\FilesAndFolders.exe
+C:\Users\csyntax\Desktop\FilesAndFolders\FilesAndFolders\obj\Debug\FilesAndFolders.pdb
+C:\Users\csyntax\Desktop\csharp-trees\FilesAndFolders\bin\Debug\FilesAndFolders.exe.config
+C:\Users\csyntax\Desktop\csharp-trees\FilesAndFolders\obj\Debug\FilesAndFolders.exe
+C:\Users\csyntax\Desktop\csharp-trees\FilesAndFolders\obj\Debug\FilesAndFolders.pdb
+C:\Users\csyntax\Desktop\csharp-trees\FilesAndFolders\bin\Debug\FilesAndFolders.exe
+C:\Users\csyntax\Desktop\csharp-trees\FilesAndFolders\bin\Debug\FilesAndFolders.pdb
+C:\Users\csyntax\Desktop\csharp-trees\FilesAndFolders\obj\Debug\FilesAndFolders.csprojResolveAssemblyReference.cache
